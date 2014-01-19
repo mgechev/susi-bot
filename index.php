@@ -8,7 +8,7 @@ require_once('src/observers/SusiEmailObserver.php');
 require_once('src/observers/SusiLogObserver.php');
 require_once('src/enums/Events.php');
 
-$observers = array(new SusiEmailObserver(array(Events::ADD_DISCIPLINE_SUCCESS), 'mgechev@gmail.com'),
+$observers = array(new SusiEmailObserver(array(Events::ADD_DISCIPLINE_SUCCESS), 'USER_EMAIL'),
                    new SusiLogObserver(array(Events::ADD_DISCIPLINE_SUCCESS, Events::ADD_DISCIPLINE_FAIL,
                                             Events::LOGGED_IN, Events::NOT_LOGGED_IN, Events::CAMPAIGN_STARTED, Events::CAMPAIGN_NOT_STARTED), "\n"));
 
